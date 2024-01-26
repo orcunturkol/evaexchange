@@ -1,0 +1,64 @@
+{
+	"info": {
+		"_postman_id": "8313dc2b-f956-4f9c-8030-ac3360f1313c",
+		"name": "EvaExchange API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16656235"
+	},
+	"item": [
+		{
+			"name": "Buy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"symbol\": \"ABC\",\n  \"portfolioId\": \"portfolio1\",\n  \"quantity\": 10\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/trade/buy",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"trade",
+						"buy"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sell",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"symbol\": \"ABC\",\n  \"portfolioId\": \"portfolio1\",\n  \"quantity\": 12\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/trade/sell",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"trade",
+						"sell"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
